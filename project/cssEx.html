@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssexample</title>
+</head>
+<body>
+    <div id="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex aperiam facere iure sapiente fugit sed eligendi accusamus saepe eveniet debitis in possimus nam amet error aspernatur repellat, accusantium labore, repellendus fuga excepturi dignissimos quo neque odit! Praesentium deserunt odit nobis officiis dolorum aspernatur eius sapiente sequi? Vitae, amet ducimus!</p>
+        <div id="staticpos"><img src="assets/dog pic.jpg" width="200" height="200"/>static</div>
+        <div id="fixedpos"><img src="assets/dog pic.jpg" width="200" height="200"/>fixed</div>
+        <div id="stickpos"><img src="assets/dog pic.jpg" width="200" height="200"/>sticky</div>
+        <div id="relativepos"><img src="assets/dog pic.jpg" width="200" height="200"/>relative</div>
+        <div id="absolutepos"><img src="assets/dog pic.jpg" width="200" height="200"/>absolute</di>
+        
+    </div>  
+    
+    <style>
+        .clrEX{
+            background-color: black;
+        }
+        #container{
+            margin: 100px;
+            padding: 100px;
+            background-color: aquamarine;
+        }
+        #staticpos{
+            display: flex;
+            position: static;
+            left: 50px;
+        }
+        #stickpos{
+            display: flex;
+            position: sticky;
+            top: 10px;
+            
+        }
+        #relpos{
+            display: flex;
+            position: relative;
+        }
+        #abspos{
+            display: flex;
+            position: absolute;
+            left: 50px;
+        }
+        #fixedpos{
+            display: flex;
+            position: fixed;
+            left: 150px;
+            bottom: 90px;
+        }
+           
+    </style>
+</body>
+</html>

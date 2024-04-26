@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h1>LOGIN</h1>
+        <label for="name" >username</label>
+        <input type="text"id="usrname" placeholder="username">
+        <label for="password">password</label>
+        <input type="password" id = "pswd"placeholder="password">
+        <button type="submit" onclick="validateLogin()" >LOGIN</button>
+        <!-- <a href="forget password.html">forget password?</a> -->
+        <p id="loginmessage"></p>
+    </form>
+    <script>
+      function validateLogin(){
+           let userName=document.getElementById('usrname').value
+           let pasword=document.getElementById('pswd').value
+           if(userName=="abcd" && pasword=="1234"){
+            window.location.href= "home page.html";
+           }
+           else
+               alert('invalid user name and password')
+}
+    </script>
+</body>
+</html>

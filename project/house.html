@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+   <style>
+    svg{
+        width: 1000px;
+        height: 720px;
+        border: 1px solid black;
+    }
+    .remote{
+         width: 370px;
+         height: 700px;
+         border: 1px solid black;
+         position: absolute;
+         margin-left: 1020px;
+         margin-top: 0px;
+         border-radius: 30px;
+    }
+    .remote div{
+        padding: 10px;
+        
+
+    }
+    svg{
+        position: relative;
+    }
+   </style>
+</head>
+<body class="container">
+     <h1>House</h1>
+     <div class="remote">
+        <div class="row mt-5">
+            <div class="col">
+               </div>
+            <div class="col">
+             <button type="submit" class="btn btn-primary " onclick="house('allOff')" > All off</button>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row ">
+        <div class="col">
+         <button type="submit" class="btn btn-primary" onclick="house('allLight')" > All light</button>
+        </div>
+        <div class="col">
+           <button type="submit" class="btn btn-primary" onclick="house('allFan')" > All fan</button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-primary" onclick="house('allDoor')">All door</button>
+         </div>
+        </div>
+        <div class="row">
+        <div class="col">
+           <button type="submit" class="btn btn-primary" onclick="house('kitchenLight')" > Kitchen light</button>
+        </div>
+        <div class="col">
+            <button type="submit" class="btn btn-primary" onclick="house('kitchenFan')" > Kitchen fan</button>
+         </div>
+       </div>
+       <div class="row">
+        <div class="col">
+           <button type="submit" class="btn btn-primary" onclick="house('hallLight')" > Hall light</button>
+        </div>
+        <div class="col">
+            <button type="submit" class="btn btn-primary" onclick="house('tv')" > Tv</button>
+         </div>
+        <div class="col">
+            <button type="submit" class="btn btn-primary" onclick="house('hallFan')"> Hall fan</button>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col">
+            <button type="submit" class="btn btn-primary" onclick="house('roomLight')" > Room light</button>
+         </div>
+         <div class="col">
+            <button type="submit" class="btn btn-primary" onclick="house('roomFan')" > Room fan</button>
+         </div>
+       </div>
+       <div class="row">
+        <div class="col">
+            <button type="submit" class="btn btn-primary" onclick="house('hallDoor')" > Hall door</button>
+         </div>
+        <div class="col">
+            <button type="submit" class="btn btn-primary" onclick="house('roomDoor')" > Room door</button>
+         </div>
+         <div class="col">
+            <button type="submit" class="btn btn-primary" onclick="house('kitchenDoor')" > kitchen door</button>
+         </div>
+       </div>
+   </div>
+     <svg >
+        <path d="M130,130 L130,50 L450,0 L650,25 L650,130" stroke="blue" style="fill: rgb(107, 103, 103);" stroke-width="1" fill="black"></path>
+        <path d="M130,130 L870,130 L870,40 L730,10 L600,40 L600,130" stroke="blue" style="fill: rgb(107, 103, 103);" stroke-width="1" fill="black"></path>
+        <line x1="120" y1="50" x2="450" y2="0" stroke-linecap="round" stroke-width="10" stroke="black" ></line>
+        <line x1="450" y1="0" x2="650" y2="25" stroke-linecap="round" stroke-width="10" stroke="black" ></line>
+        <line x1="580" y1="40" x2="730" y2="10"  stroke-linecap="round" stroke-width="10" stroke="black" ></line>
+        <line x1="730" y1="10" x2="890" y2="40" stroke-linecap="round" stroke-width="10" stroke="black" ></line>
+        <polygon points="70,248 940,248 870,130 130,130 "  stroke="blue"style="fill: rgb(153,153,153)"></polygon>
+        
+        hall <rect x="100" y="250" width="800" height="700" fill="pink" stroke="blue" > </rect>
+        hall light1 <rect x="100" y="400" width="15" height="110" fill="white" stroke="blue" id="light1"> </rect>
+        hall light2 <rect x="100" y="580" width="15" height="110" fill="white" stroke="blue" id="light2"> </rect>
+        fan1<circle cx="250" cy="450" r="20" stroke="blue" fill="white" id="fan1"></circle>
+        fan2<circle cx="250" cy="650" r="20"  stroke="blue" fill="white" id="fan2"></circle>
+        tv<rect x="110" y="250" width="200" height="100" fill="white" stroke="blue" id="tv1"> </rect>
+        tv stant <rect x="125" y="350" width="170" height="10" fill="white" stroke="blue" id="tv2"> </rect>
+        top   <polygon points="310,260 590,260 450,70" fill="pink" stroke="none"></polygon> 
+     
+         main door<rect x="390" y="600" width="100" height="200" fill="pink" stroke="blue" id="door1"> </rect>
+         <!-- m<rect x="390" y="600" width="50" height="200" fill="pink" stroke="blue" id="door4"> </rect> 
+         <polygon points="390,600 420,630 420,790 390,800" fill="pink"  id="door5"></polygon>
+         <polygon points="490,600 460,630 460,790 490,800" fill="pink"  id="door6"></polygon> -->
+        kitchen <rect x="600" y="250" width="300" height="200" fill="none" stroke="blue"></rect>
+        kitchen light1 <rect x="670" y="250" width="110" height="15" fill="white" stroke="blue" id="light3"> </rect>
+        fan1<circle cx="750" cy="350" r="20" stroke="blue" fill="white" id="fan3"></circle>
+        <!-- kitchen light2 <rect x="885" y="290" width="15" height="110" fill="white" stroke="blue"> </rect> -->
+        room <rect x="600" y="450" width="300" height="300" fill="none" stroke="blue"></rect>
+        <!-- room light1 <rect x="670" y="450" width="110" height="15" fill="white" stroke="blue"> </rect> -->
+        room light2 <rect x="885" y="520" width="15" height="110" fill="white" stroke="blue" id="light4"> </rect>
+        fan1<circle cx="750" cy="550" r="20" stroke="blue" fill="white" id="fan4"></circle>
+        kitchen door <rect x="600" y="350" width="80" height="50" fill="pink" stroke="blue" id="door3"> </rect>
+        room door <rect x="600" y="600" width="80" height="50" fill="pink" stroke="blue" id="door2"> </rect>
+        <text x="300" y="500" font-family="Verdana" font-size="30" fill="blue"> Hall</text>
+        <text x="400" y="700" font-family="Verdana" font-size="15" fill="blue"> M.Door</text>
+        <text x="700" y="400" font-family="Verdana" font-size="30" fill="blue"> Kitchen</text>
+        <text x="700" y="600" font-family="Verdana" font-size="30" fill="blue"> Room</text>
+        <text x="150" y="300" font-family="Verdana" font-size="15" fill="blue"> tv</text>
+        <text x="600" y="380" font-family="Verdana" font-size="15" fill="blue"> K.door</text>
+        <text x="600" y="630" font-family="Verdana" font-size="15" fill="blue"> R.Door</text>
+     </svg>
+ 
+    
+     <script>
+      
+          function makeallempty(){
+              document.getElementById("light1").style.fill="white"
+              document.getElementById("light2").style.fill="white"
+              document.getElementById("light3").style.fill="white"
+              document.getElementById("light4").style.fill="white"
+              document.getElementById("fan1").style.fill="white"
+              document.getElementById("fan2").style.fill="white"
+              document.getElementById("fan3").style.fill="white"
+              document.getElementById("fan4").style.fill="white"
+              document.getElementById("tv1").style.fill="white"
+              document.getElementById("tv2").style.fill="white"
+              document.getElementById("door1").style.fill="pink"
+              document.getElementById("door2").style.fill="pink"
+              document.getElementById("door3").style.fill="pink"
+
+
+          }
+        var  isvalue=false;
+          function house(giv){
+            makeallempty();
+            switch(giv){
+                case ("allLight" ):
+                    document.getElementById('light1').style.fill="red"
+                    document.getElementById('light2').style.fill="red"
+                    document.getElementById('light3').style.fill="red"
+                    document.getElementById('light4').style.fill="red"
+                    value==true;
+                    break;
+                    case ('kitchenLight'):
+                    document.getElementById('light3').style.fill="red"
+                    break;
+                    case ('kitchenFan'):
+                    document.getElementById('fan3').style.fill="red"
+                    break;
+                    case ('roomLight'):
+                    document.getElementById('light4').style.fill="red"
+                    break;
+                    case ('roomFan'):
+                    document.getElementById('fan4').style.fill="red"
+                    break;
+                    case ('hallLight'):
+                    document.getElementById('light1').style.fill="red"
+                    document.getElementById('light2').style.fill="red"
+                    break;
+                    case('allFan'):
+                    document.getElementById('fan1').style.fill="red"
+                    document.getElementById('fan2').style.fill="red"
+                    document.getElementById('fan3').style.fill="red"
+                    document.getElementById('fan4').style.fill="red"
+                    break;
+                    case ('hallFan'):
+                    document.getElementById('fan1').style.fill="red"
+                    document.getElementById('fan2').style.fill="red"
+                    break;
+                    case ('tv'):
+                    document.getElementById('tv1').style.fill="red"
+                    document.getElementById('tv2').style.fill="red"
+                    break;
+                    case ('allDoor'):
+                    document.getElementById('door1').style.fill="white"
+                    document.getElementById('door2').style.fill="white"
+                    document.getElementById('door3').style.fill="white"
+                    break;
+                    case ('hallDoor'):
+                    document.getElementById('door1').style.fill="white"
+                    break;
+                    case ('roomDoor'):
+                    document.getElementById('door2').style.fill="white"
+                    break;
+                    case ('kitchenDoor'):
+                    document.getElementById('door3').style.fill="white"
+                    break;
+                    case ('allOff'):
+                      makeallempty();
+                    break;
+     
+
+            default:
+              alert("invali button")
+            }
+
+
+          }
+     </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.form{
+    position: relative;
+    min-height: 100vh;
+    z-index: 0;
+    /* background: #30a675; */
+    padding: 30px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+    background-image: url(assets/lake-6701636_1280.jpg);
+    background-size: cover;
+}
+/* .background-image{
+    opacity: 1;
+} */
+.container{
+    max-width: 700px;
+    margin-top: 0 auto;
+ /* width: 400px; */
+}
+.form h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fffffff3;
+}
+.form h2{
+    line-height: 40px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #69275c;
+    text-align: center;
+}
+.form.main{
+    position: relative;
+    display: flex;
+    margin: 30px 0;
+   
+}
+.content{
+    width: 1000px;
+    flex-basis: 100%;
+    padding: 3em 3em;
+    background: #fdfbfb;
+    box-shadow: 2px 9px 49px -17px rgba(0,0,0,0.1);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+/* .form-img{
+    flex-basis: 100%;
+    background: #f0f4f8;
+    background-size: cover;
+    padding: 70px;
+    border-top-right-radius: 8px; 
+    border-bottom-right-radius: 8px;
+    align-items: center;
+    display: grid; 
+} */
+.form-img img{
+    max-width:100%;
+}
+.btn,
+button,
+input{
+    border-radius: 35px;
+}
+.btn:hover,
+button:hover{
+    color: #41397e;
+    transition: 0.5s ease;
+}
+.form form{
+    margin: 30px 0;
+}
+.form input,
+textarea{ 
+    outline: none;
+    margin-bottom: 15px;
+    font-stretch: 16px;
+    color: #999;
+    padding: 14px 20px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    background: #fcfcfc;
+    transition: 0.3s ease;
+}
+.form input:focus{
+    background: transparent;
+    border: 1px  solid;
+}
+.form button{
+    font-size: 18px;
+    color: #5f5454;
+    width: 100%;
+    background: #30a675;
+    font-weight: 600;
+    transition: 0.3s ease;
+    padding: 14px 15px;
+}
+@media(max-width:736px){
+.content{
+    width: fit-content;
+}
+}
+/* @media(max-width:736px){
+    .form.main{
+        flex-direction: column;
+    }
+    .form form{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .form-img{
+        border-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        order: 2;
+    }
+    .content{
+        order: 1;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+} */

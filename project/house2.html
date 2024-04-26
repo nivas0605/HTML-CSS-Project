@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOUSE</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .box1{
+            width: 200px;
+            height: 150px;
+            background-color:grey;
+            border: 2px solid black;   
+        }
+        .box2{
+            width: 300px;
+            height: 150px;
+            background-color: grey;
+            border: 2px solid black;              
+        }
+        .light{
+            width: 75px;
+            height: 10px;
+            background-color: white;
+            position: absolute;
+            left: 40px;   
+        }
+    </style>
+    <h3>HOUSE</h3>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="light" id="light1"></div>
+        </div>
+        <div class="box2" id="light2"></div> 
+    </div>
+    <button type="button" onclick="kitmylight()">on/off</button>
+    <script>
+        var condition=false;
+        function kitmylight(){
+                if('light1' && condition==false){
+            document.getElementById('light1').style.backgroundColor = "yellow" ;
+             condition=true;
+                }
+             else{
+             document.getElementById('light1').style.backgroundColor = 'white' ;
+            condition=false;
+             }
+             
+        }
+    </script>
+</body>
+</html>

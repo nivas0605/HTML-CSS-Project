@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <title>given mark is pass or not</title>
+</head>
+<body>
+  <div class="container">
+    <h2 class="text-success">Given mark is pass or faill</h2>
+    <div class="row">
+      <div class="col-1">
+        <p class="text-primary">Mark:</p>
+      </div>
+      <div class="col-2">
+        <input type="text" id="mark" class="form-control" onkeyup="check()"  />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2 text-primary">Result:</div>
+      <div class="col-4" id="result"></div>
+    </div>
+      <script>
+    function check(){
+      let mark = Number(document.getElementById("mark").value);
+      let result = "";
+      if (mark >= 35 && mark <= 100) {
+        result = "pass";
+      } else if (mark < 35) {
+        result = "fail";
+      } else if (mark > 100) {
+        result = "Enter valid mark";
+      } else {
+        result = "None";
+      }
+      document.getElementById("result").innerHTML = result;
+    }
+    </script>
+</body>

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../angularproject"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "angularproject"
+	}
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>STUDENT PAGE</h3>
+    <div>
+        <h4>student allow or not in exam</h4>
+        <label for="number">Class Held</label>
+        <input type="number" id="val1" onkeyup="studallow()" >
+        <label for="number">Student attend</label>
+        <input type="number" id="val2" onkeyup="studallow()"> <br><br>
+        <input type="text" id="result">
+    </div>
+    <div>
+        <h3>medical cause</h3>
+        <label for="checkbox"></label>
+        <input type="checkbox" id="allow">
+        <div class=""></div>
+        <div id="final"></div>
+    </div>
+    <script>
+        let percent;
+        function studallow(){
+            let value1 = document.getElementById('val1').value
+            let value2 = document.getElementById('val2').value
+               percent=( value2/value1)*100
+               document.getElementById('result').value=percent;
+            if(percent>75){
+                document.getElementById('final').innerHTML = "You have allowed"
+             }
+             else{
+                document.getElementById('final').innerHTML = "You have  Not allowed"
+             }
+            
+        }
+        function medicalcause(){
+            let value
+            if(checked){
+                document.getElementById('final').innerHTML = "you  have allowed"
+            }
+            else{
+                document.getElementById('final').innerHTML  = "you have not allowed"
+            }
+        }
+    </script>
+</body>
+</html>

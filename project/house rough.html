@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 10px;
+        }
+        .room{
+            display: flex;
+        }
+        .room{
+            display: flex;
+        }
+        .box1{
+            width: 200px;
+            height: 150px;
+            background-color:grey;
+            border: 2px solid black;   
+        }
+        .box2{
+            width: 300px;
+            height: 150px;
+            background-color: grey;
+            border: 2px solid black;              
+        }
+        .box3{
+            width: 500px;
+            height:200px;
+            background-color:grey ;
+            border: 2px solid black;
+        }
+        .light{
+            width: 75px;
+            height: 10px;
+            background-color: white;
+            position: absolute;
+            left: 40px;   
+        }
+        .lightb2{
+            width: 75px;
+            height: 10px;
+            background-color:white;
+            position: absolute;
+            left: 350px;
+            text-align: center;
+        }
+        .lightb3{
+            width: 10px;
+            height: 75px;
+            background-color:white;
+            position: absolute;
+            top: 250px;
+            left:12px;
+        }
+        .lightb13{
+            width: 10px;
+            height: 75px;
+            background-color:white;
+            position: absolute;
+            top: 250px;
+            left:503px;
+        }
+        .tv{
+            width: 150px;
+            height: 75px;
+            position: absolute;
+            background-color: white;
+            top: 215px;
+            left: 250px;
+        }
+    </style>
+    <h3>HOUSE</h3>
+</head>
+<body>
+    <div class="container">
+        <div class="room">
+            <div class="box1">
+                <div class="light" id="light1"></div>
+            </div>
+            <div class="box2" >
+                <div class="lightb2" id="lightb2"></div>
+            </div>
+        </div>
+        <div class="box3" >
+            <div class="lightb3" id="lightb3"></div>
+            <div class="tv" id="tv"></div>
+            <div class="lightb13" id="lightb3"></div>
+        </div>
+    </div>
+    kitchen
+    <button type="button" onclick="kitmylight()">on/off</button> <br> <br>
+    room
+    <button type="button" onclick="roomlight()">0n/off</button> <br><br>
+    halllight
+    <button type="button" onclick="halllight()">on/off</button> <br><br>
+    halltv
+    <button type="button" onclick="halltv()">on/off</button> <br><br>
+    all light
+    <button type="button" onclick="alltv">on/off</button> <br> <br>
+    <script>
+        var condition=false;
+        function kitmylight(){
+                if('light' && condition==false){
+                    document.getElementById('light1').style.backgroundColor = "yellow" ;
+                    condition=true;
+                }
+                
+                else{
+                    document.getElementById('light1').style.backgroundColor = 'white';
+                    condition=false;
+                }
+        }
+        function roomlight(){
+            if('light' && condition==false){
+                document.getElementById('lightb2').style.backgroundColor = "yellow" ;
+                condition=true;
+            }
+            else{
+                    document.getElementById('lightb2').style.backgroundColor = 'white';
+                    condition=false;
+                }
+                
+        }
+        function halllight(){
+            if('light' && condition==false){
+                document.getElementById('lightb3').style.backgroundColor = "yellow" ;
+                //document.getElementById('lightb3').style.backgroundColor = "yellow" ;
+                condition=true;
+            }
+            else{
+                    document.getElementById('lightb3').style.backgroundColor = 'white';
+                    condition=false;
+                }
+                
+        }
+        function halltv(){
+            if('light' && condition==false){
+                document.getElementById('tv').style.backgroundColor = "yellow" ;
+                //document.getElementById('lightb3').style.backgroundColor = "yellow" ;
+                condition=true;
+            }
+            else{
+                    document.getElementById('tv').style.backgroundColor = 'white';
+                    condition=false;
+                }
+                
+        }
+        function alltv(){
+            if('light' && condition==false){
+                //document.getElementById('tv').style.backgroundColor = "yellow" ;
+                //document.getElementById('lightb3').style.backgroundColor = "yellow" ;
+                document.getElementById('light1').style.backgroundColor = "yellow" ;
+                document.getElementById('lightb2').style.backgroundColor = "yellow" ;
+
+
+                condition=true;
+            }
+            else{
+                document.getElementById('light1').style.backgroundColor = 'white';
+                document.getElementById('lightb2').style.backgroundColor = 'white';
+                condition=false;
+            }
+                
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>,initial-scale=1.0">
+        <style>
+            form{
+                text-align: center;
+                border-style: solid;
+                border-color: black;
+                margin-left: 400px;
+                margin-right: 400px;
+                margin-top: 25px;
+               
+                
+            }
+
+            table{
+                margin-left: 150px;
+                
+            
+            }
+        </style>
+</head>
+<body> 
+ <form action="../login.html">
+        <h1> Register</h1>
+        <Table cellspacing="20px" style="border: 10px;" >  
+    <tr>
+        <td><label for="name">First name</label></td>
+        <td><input type=" text" placeholder="First name"></td>
+    </tr>
+    <tr>
+        <td><label for="name">Last name</label></td>
+        <td><input type="text" placeholder="Last name"></td>
+    </tr>
+    <tr>
+        <td>
+        <label for="Gender">Gender</label><br>
+        <input type="radio" name="Gender">Male <br>
+        <input type="radio" name="Gender">Female <br>
+        <input type="radio" name="Gender">Others <br>
+        </td>
+    </tr> 
+    <tr>
+        <td><label for="Phone number">Phone number</label></td>
+        <td><input type="number" placeholder="Phone number"></td>
+    </tr>
+    <tr>
+        <td><label for="address">address</label></td>
+        <td><textarea row="10" col="60" placeholder="address"></textarea></td>
+    </tr>
+    <tr>
+        <td><label for="Email">Email</label></td>
+        <td><input type="email" placeholder="Email"></label></td>
+    </tr>
+    <tr>
+        <td><label for="password">password</label></td>
+        <td><input type="password" placeholder="password"></td>
+    </tr>
+    <tr>
+        <td><label for="date of birth">date of birth</label></td>
+        <td><input type="date" name="date of birth"></td>
+    </tr>
+    <tr>
+            <td><label for="country">Select Country</label></td>
+            <td>
+                <select name="Select Country" id="country">
+                <option value="">choose only</option>
+                <option value="">Canada</option>
+                <option value="">Usa</option>
+                <option value="">France</option>
+                <option value="">India</option>
+                </select>
+            </td>
+    </tr>
+    <tr>
+        <td><label for="confirm password">confirm password</label></td>
+        <td><input type="password" placeholder="confirm password"></td>
+    </tr>
+    <tr>
+        <td><a href="../login.html"><input type="button" value="submit"></a></td>
+        <td><input type="button" value="reset"></td>
+    </tr>
+    </Table>
+</form>
+
+</body>
+</html>
