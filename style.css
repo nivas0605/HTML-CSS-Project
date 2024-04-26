@@ -1,0 +1,104 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    cursor: pointer;
+ }
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/beach-832346_1280.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+ }
+form{
+    width: 28rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,337);
+    border-radius: 30px;
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+    justify-content: center;
+    background: rgb(250, 252, 252);
+}
+h1{
+    font-size: 50px;
+    color: rgb(14, 178, 219);
+    text-shadow: 2px 2px 4px rgba(0,0,0.2);
+    margin-top: 5%;
+    opacity: .7;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15%;
+}
+h1:after{
+    content: "";
+    /* position: absolute; */
+    width: 50%;
+    height: 4px;
+    display: block;
+    margin: 0% auto;
+    color: #0a0a0a;
+    border-bottom: 2px solid rgba(29, 28, 28, 0.6);
+    justify-content: center;
+}
+ /* h1::before{
+    content: "";
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0% auto;
+    color: #0a0a0a;
+    border-bottom: 2px solid rgba(29, 28, 28, 0.6);
+    justify-content: center;
+}  */
+label{
+    font-size: 20px;
+    color: rgb(14, 178, 219);
+    margin-left: 10%;
+    opacity: .8;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    font-variant: small-caps;
+
+}
+input{
+    width: 80%;
+    margin: 5% auto;
+    margin-bottom: 8%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(10, 10, 10);
+    border-bottom: 1px solid rgba(29, 28, 28, 0.6);
+    opacity: .8;
+}
+button{
+    width: 40%;
+    margin: 3% auto;
+    color: rgb(14, 178, 219);
+    font-size: 15px;
+    opacity: .7;
+    background: rgba(255,255,255,0.06);
+    padding: 10px,30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.2);
+    box-shadow: 3px 3px 5px rgba(25, 25, 28, 0.37);
+    border-left: 1px solid rgba(25, 24, 24, 0.3);
+    border-top: 1px solid rgba(31, 23, 23, 0.3);
+
+}
+a{
+    font-size: 18px;
+    text-align: center;
+    color: rgb(16, 15, 15);
+    opacity: .7;
+}
